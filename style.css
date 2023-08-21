@@ -331,6 +331,9 @@ h6 {
 .footer-section {
   
   background-color: #3400ff;
+
+  /*Set the text color to a brighter color in order to see the text. Phillip Andrews*/
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -346,16 +349,37 @@ h6 {
 
 }
 
+/*Moved the footer logo to lineup with @lopem ipsum. Phillip Andrews*/
+.footer-logo {
+  margin-left: 20px;
+}
+
 .list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  
-  
+
+  /*Aligned the left column text to match with the right column text. Phillip Andrews*/
+  padding-top: 25px;
 }
 
 .list-items{
   padding: 20px;
+
+  /*Added styling to provide a transition when the user clicks on the footer navigation. Phillip Andrews*/
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  background-color: aquamarine;
+  color: rebeccapurple;
+}
+
+/*Added an id so the copyright matches the style of the logo and social media icons. Phillip Andrews*/
+#copyright {
+  border-style: none;
+  color: #ffffff;
+  background-color: #3400ff;
+
 }
 
 .footer-right {
@@ -376,5 +400,7 @@ h6 {
 .list-items:hover{
   transition-duration: 0.3s;
   color: #ffffff;
-  
+
+  /*Changed the background color to match the footer's background so the transition will stand out. Phillip Andrews*/
+  background-color: #3400ff;
 }
